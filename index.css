@@ -1,5 +1,105 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #121212;
+  background-color: #f3f5fc;
+}
+
+.NavBar {
+  width: 100%;
+  height: auto;
+}
+.NavBar img {
+  width: 100px;
+  margin: 30px;
+}
+
+.contenidoPrincipal {
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px;
+}
+
+.input-section {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.input-section label {
+  font-size: 24px;
+  color: #294a76;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#text-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.output-section {
+  flex: 1;
+  text-align: center;
+  background-color: #f9fafc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.output-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.output-text {
+  font-size: 20px;
+  color: #294a76;
+  margin-bottom: 10px;
+}
+
+.output-subtext {
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+
+.note {
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.encrypt-btn {
+  background-color: #294a76;
+  color: #ffffff;
+}
+
+.decrypt-btn {
+  background-color: #e0e0e0;
+  color: #294a76;
 }
