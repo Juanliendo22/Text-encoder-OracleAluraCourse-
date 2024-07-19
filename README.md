@@ -1,0 +1,2 @@
+# Text-encoder-OracleAluraCourse-
+TextEncoder 
