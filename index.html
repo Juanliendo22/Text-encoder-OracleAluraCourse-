@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <nav class="NavBar">
-      <img src="./assets/Logo.png" alt="" />
-    </nav>
+    <header class="navbar">
+      <img src="./assets/Logo.png" alt="Logo" />
+    </header>
 
-    <div class="main-content">
-        <div class="input-section">
-            <label for="text-input">Ingrese el texto aqui</label>
-            <textarea id="text-input" rows="10" cols="50"></textarea>
+    <main class="main-content">
+      <section class="input-section">
+        <label for="text-input">Ingrese el texto aquí</label>
+        <textarea id="text-input" rows="10" aria-label="Text input"></textarea>
+        <div class="content-bottom">
+          <button class="encrypt-btn" onclick="encryptText()">Encriptar</button>
+          <button class="decrypt-btn" onclick="decryptText()">
+            Desencriptar
+          </button>
         </div>
-        <div class="output-section">
-            <img src="./assets/images/no-message.png" alt="No message found">
-            <p class="output-text">Ningún mensaje fue encontrado</p>
-            <p class="output-subtext">Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="note">⚫ Solo letras minúsculas y sin acentos</div>
-        <div class="buttons">
-            <button class="encrypt-btn">Encriptar</button>
-            <button class="decrypt-btn">Desencriptar</button>
-        </div>
-    </div>
-</div>
+        <p class="note">⚫ Solo letras minúsculas y sin acentos</p>
+      </section>
+      <section class="output-section">
+        <img src="./assets/Muñeco.png" alt="No message found" />
+        <p class="output-text" id="output-text">
+          Ningún mensaje fue encontrado
+        </p>
+        <p class="output-subtext">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button class="copy-btn" onclick="copyText()">Copiar</button>
+      </section>
+    </main>
 
     <script src="./index.js"></script>
   </body>

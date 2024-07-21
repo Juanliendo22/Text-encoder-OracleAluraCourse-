@@ -1,52 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  background-color: #f3f5fc;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.NavBar {
-  width: 100%;
-  height: auto;
+body {
+  background-color: #121212;
+  color: #ffffff;
 }
-.NavBar img {
+
+header.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+header.navbar img {
   width: 100px;
-  margin: 30px;
-}
-
-.contenidoPrincipal {
-  width: 100%;
-  height: auto;
 }
 
 .main-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-.input-section {
-  flex: 2;
-  margin-right: 20px;
+.input-section,
+.output-section {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .input-section label {
   font-size: 24px;
-  color: #294a76;
-  display: block;
   margin-bottom: 10px;
 }
 
 #text-input {
   width: 100%;
+  height: 200px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  resize: none;
+}
+
+.content-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .output-section {
-  flex: 1;
-  text-align: center;
   background-color: #f9fafc;
+  color: #294a76;
   padding: 20px;
   border-radius: 8px;
 }
@@ -59,7 +74,6 @@
 
 .output-text {
   font-size: 20px;
-  color: #294a76;
   margin-bottom: 10px;
 }
 
@@ -68,22 +82,9 @@
   color: #7a7a7a;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f5f7fa;
-}
-
 .note {
-  font-size: 12px;
+  font-size: 14px;
   color: #7a7a7a;
-}
-
-.buttons {
-  display: flex;
-  gap: 10px;
 }
 
 button {
@@ -92,6 +93,11 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.encrypt-btn {
+  background-color: #294a76;
+  color: #ffffff;
 }
 
 .encrypt-btn {
